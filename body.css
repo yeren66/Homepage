@@ -1,0 +1,96 @@
+body {
+    width: 40em;
+    margin: 0 auto;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    padding-top: 50px;
+    /* background-color: transparent; /* 设置背景为透明  */
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #f0f0f0;
+    text-align: justify;
+    margin-bottom: 1.5em;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(0.98);
+}
+
+em {
+    color: #808080;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+p:last-child {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #888;
+}
+
+/* 顶部菜单栏 */
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* 使导航栏内容靠右对齐 */
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 10px; /* 调整 padding 值，减少右侧的内边距 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-sizing: border-box; /* 确保 padding 不会影响元素的宽度计算 */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+}
+
+p.fixed-bottom {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #888;
+}
